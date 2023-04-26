@@ -6,29 +6,27 @@
 /*   By: rmessner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 17:36:12 by rmessner          #+#    #+#             */
-/*   Updated: 2023/04/22 18:08:48 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/04/25 10:53:26 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 void	ft_is_negative(int n)
-{
-		
-		char pos;
-		char neg;
+{		
+	char	pos;
+	char	neg;
 
-		pos = 'P';
-		neg = 'N';
-		
-		if(n >= 0)
-		{
-			write(1, &pos, 1);
-		}
-		else
-		{
-			write(1, &neg, 1);
-		}
+	pos = 'P';
+	neg = 'N';
+	if (n >= 0)
+	{
+		write(1, &pos, 1);
+	}
+	else
+	{
+		write(1, &neg, 1);
+	}
 }
 
 /*

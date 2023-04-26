@@ -6,7 +6,7 @@
 /*   By: rmessner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 12:44:13 by rmessner          #+#    #+#             */
-/*   Updated: 2023/04/24 14:22:12 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/04/25 10:45:31 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,20 @@
 
 void	ft_print_alphabet(void)
 {
-		char c;
-		c = 'a';
-		
-		while(c <= 'z')
-		{
-			write(1, &c, 1);
-			c++;
-		}
+	char	c;
 
+	c = 'a';
+	while (c <= 'z')
+	{
+		write(1, &c, 1);
+		c++;
+	}
 }
 
-
-
+/*
 int		main()
 {
 		ft_print_alphabet();
 		return (0);
 }
-
-
+*/

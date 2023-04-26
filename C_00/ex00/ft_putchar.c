@@ -6,7 +6,7 @@
 /*   By: rmessner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 12:11:17 by rmessner          #+#    #+#             */
-/*   Updated: 2023/04/22 12:35:09 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/04/25 11:26:28 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,12 @@
 
 void	ft_putchar(char c)
 {
-		write(1, &c, 1);
-		return (0);
+	write(1, &c, 1);
 }
-
 /*
 int		main()
 {
 		ft_putchar('Z');
-		return (0);
+		return 0;
 }
 */
-
