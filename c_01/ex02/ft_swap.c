@@ -6,21 +6,23 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 11:52:26 by rmessner          #+#    #+#             */
-/*   Updated: 2023/04/26 15:34:04 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/04/29 19:11:46 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
-void ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-    int i;
-    i = *a;
-    *a = *b;
-    *b = i;
+	int	i;
+
+	i = *a;
+	*a = *b;
+	*b = i;
 }
 /*
+#include <stdio.h>
+
 int     main()
 {
     int a = 100;
