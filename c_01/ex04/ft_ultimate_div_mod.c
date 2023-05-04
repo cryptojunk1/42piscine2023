@@ -6,7 +6,7 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 15:56:17 by rmessner          #+#    #+#             */
-/*   Updated: 2023/04/29 12:35:27 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/05/04 07:49:11 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,11 @@
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
-	*a = *a / *b;
-	*b = *a % *b;
+	int div;
+    int mod;
+    
+    div = *a / *b;
+	mod = *a % *b;
 }
 /*
 int     main()

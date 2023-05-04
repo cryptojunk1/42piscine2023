@@ -6,7 +6,7 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 08:44:06 by rmessner          #+#    #+#             */
-/*   Updated: 2023/04/27 09:07:40 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/05/04 07:52:23 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void ft_putstr(char *str)
 
 int     main(void)
 {
-    char str = "Hallo";
-    ft_putstr(&str);
+    char str[] = "Hallo";
+    ft_putstr(str);
     return 0;
 }

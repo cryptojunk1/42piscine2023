@@ -6,13 +6,14 @@
 /*   By: rmessner <rmessner@student.42vienna.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 06:53:08 by rmessner          #+#    #+#             */
-/*   Updated: 2023/05/04 07:41:51 by rmessner         ###   ########.fr       */
+/*   Updated: 2023/05/04 08:02:27 by rmessner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
+/*
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
@@ -28,6 +29,18 @@ char	ft_putstr(char *str)
 		ft_putchar(str[i]);
 		i++;
 	}
+}
+*/
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 
 void	ft_swap(char **a, char **b)
@@ -79,10 +92,11 @@ int	main(int argc, char *argv[])
 	i = 1;
 	while (i < argc)
 	{
-		ft_putstr(argv[i]);
-		ft_putchar('\n');
+		write(1, argv[i], ft_strlen(argv[i]));
+		write(1, "\n", 1);
 		i++;
 	}
+	
 	return (0);
 }
 
@@ -91,5 +105,5 @@ int	main(int argc, char *argv[])
 2. mit strcmp ascii reihenfolge rausfinden
 3. mit swap werte austauschen
 4. Strings ausgeben mit putstr
-5. Putchar für putstr und neue Zeile bauen
+5. Putchar für putstr und neue Zeile bauen || strlen und write benutzen
 */
